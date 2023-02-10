@@ -1,0 +1,290 @@
+* {
+    padding: 0px;
+    margin: 0px;
+}
+
+@font-face {
+    font-family: Comicbook;
+    src: url("../../public/fonts/comic_book/Comic Book.otf");
+  }
+
+.chat-container {
+    background-color: #AEA7A0;
+    display: flex;
+    height: 100vh;     /* For some reason, 100% doesn't work here. 100% works on plain html but not in this project*/
+
+    overflow: hidden;
+
+    font-family: Comicbook;
+}
+
+.panel-1 {
+    background-color: #EDE8E4;
+    border: 1px solid #524c4a;
+    margin: 7px;
+
+    /* stops the shrinking but adding the "flex: 1" breaks it*/
+    /* takes care of the width */
+    /* flex: 1; */
+    /* flex-shrink: 0;
+    width: 100px; */
+    flex: initial;
+    width: 50px;
+
+    /* prevents the circles from shrinking when the 'overflow-y: scroll' appears */
+    min-width: 50px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    overflow-y: scroll;
+}
+
+.panel-1::-webkit-scrollbar {
+    display: none;
+}
+
+.server-head {
+    flex-shrink: 0;
+    margin-top: 5px;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: #746B6B;
+  }
+
+.server-head:hover {
+    background-color: #8f8888;
+}
+
+.server-head-logout {
+    flex-shrink: 0;
+    margin-top: 5px;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: #b4ed9b;
+  }  
+
+.panel-2 {
+    margin: 7px;
+
+    /* takes care of the width */
+    flex: 2;
+    /* flex-shrink: 0;
+    width: 300px; */
+    flex: initial;
+    width: 200px;
+
+    min-width: 200px;
+
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.search-friends {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.search-friends button {
+    width: 100px;
+    margin-top: 5px;
+    font-family: Comicbook;
+    align-self: center;
+}
+
+.friends {
+    border: 1px solid #524c4a;
+    flex: 1;
+
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    align-items: center;
+    overflow-y: scroll;
+    
+    padding: 10px 0;
+}
+
+.friends::-webkit-scrollbar {
+    display: none;
+}
+
+.friend-item {
+    flex-shrink: 0;
+    height: 45px;
+    width: 90%;
+    background-color:#BCB7B4;
+    border-radius: 10px;
+
+    display: flex;
+    align-items: center;
+
+}
+
+.friend-item:hover {
+    background-color: #d0ccca;
+}
+
+.friend-item-profile {
+    margin-left: 5px;
+}
+
+.friend-item-profile img {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+}
+
+.friend-item-username {
+    margin-left: 5px;
+    font-size: 14px;
+}
+
+.friend-item-last-message {
+    font-size: 10px;
+}
+
+.profile {
+    border: 1px solid #524c4a;
+    flex: none;
+}
+
+.user-profile img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+}
+
+
+.panel-3 {
+    background-color: #EDE8E4;
+    border: 1px solid #524c4a;
+    margin: 7px;
+    padding: 10px;
+
+    /* takes care of the width */
+    flex: 1;
+    /* flex: initial;
+    width: 100%; */
+    overflow: hidden;
+
+    /* flexbox on chat header, body, and messageInput */
+    display: flex;
+    flex-direction: column;
+}
+
+.chat-header {
+    margin-bottom: 10px;
+    border-bottom: 1px solid #524c4a;
+}
+
+.chat-body {
+    overflow-y: auto;
+}
+
+.chat-body::-webkit-scrollbar {
+    display: none;
+}
+
+.chat-message {
+    /* width: 70%;
+    height: 50px;
+    background-color: #746B6B;
+    border-radius: 10px;
+    word-wrap: break-word */
+    display: flex;
+}
+
+.chat-profile img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+}
+
+.chat-content {
+    margin-left: 7px;
+    display: flex;
+    flex-direction: column;
+}
+
+.chat-content span {
+    font-size: 12px;
+}
+
+.chat-content img {
+    height: 100px;
+    width: 70px;
+}
+
+
+/* CHAT MESSAGE INPUT FROM TUTORIAL (i dont like hitting send button, must be able to send by hitting enter) */
+
+.chat-message-input {
+    /* for this specific scenario, this is how you set a flex item at the bottom horizontally other option for different scenario include "margin-bottom" */
+    margin-top: auto;
+
+    display: flex;
+    
+    background-color: white;
+    border-radius: 5px;
+}
+
+.chat-message-input input{
+    width: 100%;
+    height: 25px;
+    border-radius: 5px;
+    border: none;
+    padding-left: 10px;
+}
+
+/* removes the border around the input text when clicked */
+.chat-message-input input:focus {
+    outline: none;
+}
+
+.send {
+    display: flex;
+}
+
+.send img {
+    margin-right: 5px;
+    width: 30px;
+    height: 30px;
+}
+
+
+/* MY VERSION OF CHAT MESSAGE INPUT */
+
+.mychat-container {
+    margin-top: auto;
+}
+
+.mychat-message-input {
+    display: flex;
+    flex-direction: row;
+    background-color: #f4f1ee;
+}
+
+.mychat-message-input input {
+    width: 100%;
+    border: none;
+    background-color: #f4f1ee;
+    font-family: Comicbook;
+
+}
+
+.mychat-message-input input:focus {
+    outline: none;
+}
+
+.file-image {
+    width: 30px;
+    height: 30px;
+    margin-right: 10px;
+}
+
+
