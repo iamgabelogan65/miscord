@@ -1,0 +1,230 @@
+@font-face {
+    font-family: Comicbook;
+    src: url("../../public/fonts/comic_book/Comic Book.otf");
+  }
+
+
+// LOGIN AND REGISTER COMPONENT STYLES
+
+body {
+    background-color: #AEA7A0;
+}
+
+.form-container {
+    font-family: Comicbook;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    .form-wrapper {
+        background-color: #EDE8E4;
+        padding: 20px 60px;
+        border-radius: 10px;
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        align-items: center;
+
+        .title-logo{
+            color: #231D1B;
+            font-weight: bold;
+            font-size: 48px;
+        }
+
+        .title-register{
+            color: #524c4a;
+            font-size: 28px;
+        }
+
+        form{
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+
+            input{
+                padding: 15px;
+                border: none;
+                border-bottom: 1px solid #524c4a;
+                background-color: #EDE8E4;
+                &::placeholder{
+                    color: #969696;
+                    font-family: Comicbook;
+                    font-size: 18px;
+                }
+            }
+
+            button{
+                background-color: #AEA7A0;
+                color: black;
+                padding: 10px;
+                font-weight: bold;
+                border: none;
+                cursor: pointer;
+                font-family: Comicbook;
+            }
+        }
+
+        p{
+            color:#231D1B;
+            font-size: 18px;
+            margin-top: 10px;
+
+
+        }
+
+    }
+}
+
+// // HOME PAGE STYLES
+// body {
+//     background-color: #AEA7A0;
+// }
+
+// .home-container {
+//     font-family: Comicbook;
+//     height: 100vh;
+//   }
+
+
+// .home-wrapper {
+//     display: flex;
+//     height: 100vh;
+
+//     .panel-1 {
+//         border: 1px solid #231D1B;
+//         height: 100%;
+//         width: 100px;
+//         margin: 5px 10px;
+//         background-color: #EDE8E4;
+
+      
+//         display: flex;
+//         justify-content: flex-start;
+//         align-items: center;
+//         flex-direction: column;
+
+//         .logo {
+//             margin-top: 20px;
+//             margin-bottom: 20px;
+//             width: 60px;
+//             height: 60px;
+//             border-radius: 15px;
+//             background-color: #18A0FB;
+          
+//           }
+          
+//           .server-head {
+//             margin-top: 15px;
+//             width: 60px;
+//             height: 60px;
+//             border-radius: 50%;
+//             background-color: #746B6B;
+//           }
+      
+//     }
+
+
+
+
+//     .panel-2 {
+//         display: flex;
+//         margin: 5px 0px;
+//         flex-direction: column;
+
+//         .friends-list-panel {
+//             border: 1px solid #231D1B;
+//             height: 85vh;
+//             width: 200px;
+//             margin: 0px 0px;
+//             background-color: #EDE8E4;
+          
+//             display: flex;
+//             flex-direction: column;
+//             justify-content: flex-start;
+//             align-items: center;
+
+
+//             .friends-menu-item {
+//                 width: 100%;
+//                 text-align: left;
+//                 margin-top: 15px;
+//                 margin-left: 15px;
+//                 font-size: 18px;
+//                 /* border: 1px solid red; */
+//               }
+              
+//               .direct-message-header {
+//                 width: 100%;
+//                 text-align: left;
+//                 margin: 15px 0px;
+//                 margin-left: 15px;
+//                 font-size: 10px;
+//               }
+              
+//               .friends-list-item {
+//                 height: 30px;
+//                 width: 180px;
+//                 border: 1px solid #231D1B;
+//                 border-radius: 10px;
+//                 margin-bottom: 10px;
+//                 background-color: #BCB7B4;
+//               }
+
+//               .search-friends {
+//                 input {
+//                     margin-bottom: 10px;
+//                 }
+//             }
+//         }
+
+//         .profile-panel {
+//             border: 1px solid #231D1B;
+//             height: 10.6vh;
+//             width: 200px;
+//             margin: 5.6px 0px;
+//             background-color: #EDE8E4;
+    
+//             .user-profile {
+//                 img {
+//                     width: 50px;
+//                     height: 50px;
+//                     border-radius: 50%;
+//                 }
+//             }
+//         }
+//       }
+
+
+//     .panel-3 {
+//         border: 1px solid #231D1B;
+//         height: 97vh;
+//         width: 100%;
+//         margin: 5px 10px;
+//         background-color: #EDE8E4;
+        
+//         display: flex;
+//         flex-direction: column;
+
+//         .chat-heading {
+//             border: 1px solid #231D1B;
+//             height: 5%;
+//             margin: 5px 5px;
+//           }
+          
+//           .chat-body {
+//             border: 1px solid #231D1B;
+//             height: 90%;
+//             margin: 5px 5px;
+//           }
+          
+//           .chat-textbox {
+//             border: 1px solid #231D1B;
+//             height: 5%;
+//             margin: 5px 5px;
+//         }
+//     }
+
+
+
+// }
