@@ -12,7 +12,7 @@ export const ChatBody = () => {
     useEffect(() => {
 
         const unsub = onSnapshot(doc(db, "chats", data.chatID), (doc) => {
-          doc.exists() && setMessages(doc.data().messages)
+          doc.exists() && setMessages(doc.data().messages.sort((a, b) => { return a.date - b.date}))
         })
     
         return () => { 

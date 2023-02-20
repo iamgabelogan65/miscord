@@ -10,13 +10,7 @@ import { getStorage } from "firebase/storage"
 // Your web app's Firebase configuration
 // For Firebase JS SDK v7.20.0 and later, measurementId is optional
 const firebaseConfig = {
-  apiKey: "AIzaSyDIA5_I8dibhULzglXJvIiDNsm7g5SAyac",
-  authDomain: "discordfirestore.firebaseapp.com",
-  projectId: "discordfirestore",
-  storageBucket: "discordfirestore.appspot.com",
-  messagingSenderId: "967299273319",
-  appId: "1:967299273319:web:9d056777d1ff1f77f4fac2",
-  measurementId: "G-SWQKPB5EK5"
+  // add your Firebase configuration here
 }
 
 // Initialize Firebase

@@ -26,7 +26,7 @@ const NewSearch = () => {
                     //     u.push(doc.data())
                     // }
                     u.push(doc.data())
-                    setUsers(u)  // IMPORTANT : PUT THE SET STATE FUNCTION INSIDE THE FOR EACH FUNCTION. NOOOT OUTSIDE
+                    setUsers(u)  // IMPORTANT : PUT THE SET STATE FUNCTION INSIDE THE FOR EACH FUNCTION. NOT OUTSIDE
                 })
                 // setUsers(u)
             } catch (err) {
@@ -66,7 +66,6 @@ const NewSearch = () => {
         const convoName = memberNames.join(', ')
 
         // console.log(memberIDs)
-
         const q = query(collection(db, "convos"), where("creator", "==", currentUser.uid), where("members", "==", memberIDs));
         const querySnapshot = await getDocs(q)
 
