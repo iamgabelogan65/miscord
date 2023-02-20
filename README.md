@@ -7,20 +7,20 @@ A web application and a clone of Discord with features such as real time messagi
 
 ## Technologies
 
-React is used to power the frontend
-Firebase is used for authentication, and storing users, messages, and files
+- React is used to power the frontend
+- Firebase is used for authentication, and storing users, messages, and files
 
 ## Features
 
-Real time messaging
-User's ability to select other users and form either a 1-1 convo or group convo
+- Real time messaging
+- User's ability to select other users and form either a 1-1 convo or group convo
 
-More features soon
+- More features soon
 
 ## Instructions
 
-Create your own Firebase project
-Add your Firebase Configuration under src/firebase/firebase.js
+- Create your own Firebase project
+- Add your Firebase Configuration under src/firebase/firebase.js
 
 ```js
 #install dependencies
